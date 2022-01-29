@@ -1,6 +1,6 @@
 let pokemonList = [{
     name: 'Bulbasaur',
-    hiegth: 0.7,
+    size: 0.7,
     weight: 6.9,
     eggGroups: [
       'Monster',
@@ -13,7 +13,7 @@ let pokemonList = [{
   },
   {
     name: 'Charmander',
-    hiegth: 0.6,
+    size: 0.6,
     weight: 8.5,
     eggGroups: [
       'Monster',
@@ -26,7 +26,7 @@ let pokemonList = [{
   },
   {
     name: 'Butterfree',
-    hiegth: 1.1,
+    size: 1.1,
     weight: 32,
     eggGroups: [
       'Bug',
@@ -41,13 +41,23 @@ let pokemonList = [{
 
 ];
 
+for (let i = 0; i < pokemonList.length; i++) {
+  if (pokemonList[i].size < 1) {
+    document.write("<p>" + pokemonList[i].name + " (" + pokemonList[i].size + ")" + "</p>");
+  } else {
+    document.write("<p>" + pokemonList[i].name + " (" + pokemonList[i].size + ")" + " - Wow that's big" +
+      "</p>");
+  }
 
-let text = "";
-let item = 0;
-
-while (pokemonList[item]){
-  text = text + " " + pokemonList[item];
-  item++;
 }
-document.write(text);
-console.log(pokemonList);
+
+
+// for (let i = 0; i < person.length; i++) {
+//   if (person[i].age < 19 && person[i].age > 13) {
+//     console.log(person[i].name + " is a teenager");
+//   } else if (person[i].age < 13) {
+//     console.log(person[i].name + " is a child");
+//   } else {
+//     console.log(person[i].name + " is an adult");
+//   }
+// }

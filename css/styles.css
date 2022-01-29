@@ -1,0 +1,22 @@
+/* text color : #191919
+primary color : #ECDBBA
+secondary color : #2D4263 */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECDBBA;
+  color: #191919;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+p {
+  padding: 5px;
+  margin: 20px;
+}
