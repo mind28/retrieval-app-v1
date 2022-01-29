@@ -42,4 +42,12 @@ let pokemonList = [{
 ];
 
 
+let text = "";
+let item = 0;
+
+while (pokemonList[item]){
+  text = text + " " + pokemonList[item];
+  item++;
+}
+document.write(text);
 console.log(pokemonList);
