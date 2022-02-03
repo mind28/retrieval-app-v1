@@ -55,12 +55,12 @@ let pokemonRepository = (function() {
   };
 })();
 
-console.log(pokemonRepository.getAll()); // []
+console.log(pokemonRepository.getAll());
 pokemonRepository.add({
   name: 'Pikachu',
   size: 0.4
 });
-console.log(pokemonRepository.getAll()); // [ { name: 'Pikachu' } ]
+console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function(pokemon) {
   if (pokemon.size < 1) {
